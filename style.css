@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background: #f7f7f7;*/
+    background: #6d69cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color: aliceblue;
+    font-size: 65px;
+    font-family: "Baloo Bhai 2";
+    position: relative;
+    top: -10px;
+  }
+  #disp{
+    color: aliceblue;
+    position: relative;
+    top: -60px;
+    font-size: 20px;
+  }
+  #info-disp{
+    color: aliceblue;
+    position: relative;
+    top: -60px;
+    font-size: 20px;
+  }
+  img{
+    position: relative;
+    top: 40px;
+  }
+  .quiz-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    top: -40px;
+  }
+  .play-button {
+    position: relative;
+    top: -30px;
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .play-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5);
+  }
+  
+  #options {
+    margin: 20px 0;
+  }
+  
+  .option {
+    background: #eee;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background: #ddd;
+  }
+  
+  #submit, #restart {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #submit:hover, #restart:hover {
+    background: #0056b3;
+  }
+  
+  #feedback {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
