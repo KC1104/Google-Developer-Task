@@ -1,4 +1,3 @@
-// Quiz data
 const quizData = [
     {
       question: "What is the capital of India?",
@@ -6,7 +5,7 @@ const quizData = [
       correct: "New Delhi"
     },
     {
-      question: "Who is he Prime Minister of India?",
+      question: "Who is the Prime Minister of India?",
       options: ["Amit Shah", "Ajit Doval", "Narendra Modi", "Yogi Adityanath"],
       correct: "Narendra Modi"
     },
@@ -35,7 +34,6 @@ const quizData = [
   let currentQuestionIndex = 0;
   let score = 0;
   
-  // Elements
   const playBtn = document.getElementById('play');
   const quizEl = document.getElementById('quiz');
   const container=document.getElementById('q-cont');
@@ -47,11 +45,10 @@ const quizData = [
   const progressEl = document.getElementById('progress');
   const restartBtn = document.getElementById('restart');
   
-  // Play button click
   playBtn.addEventListener('click', () => {
-    playBtn.style.display = 'none'; // Hide Play button
+    playBtn.style.display = 'none'; 
     quote.style.display='none';
-    quizEl.style.display = 'block'; // Show Quiz
+    quizEl.style.display = 'block'; 
     container.style.display='block';
     loadQuestion();
   });
@@ -78,15 +75,14 @@ const quizData = [
     const correctAnswer = quizData[currentQuestionIndex].correct;
   
     if (selectedOption === correctAnswer) {
-      feedbackEl.textContent = "Correct!";
-      feedbackEl.style.color = "green";
+      feedbackEl.textContent = " 😊 Correct!";
+      feedbackEl.style.color = "#00FF00";
       score++;
     } else {
-      feedbackEl.textContent = `Wrong! Correct Answer: ${correctAnswer}`;
-      feedbackEl.style.color = "red";
+      feedbackEl.textContent = ` 😢 Wrong! Correct Answer: ${correctAnswer}`;
+      feedbackEl.style.color = "#FF1744";
     }
   
-    // Disable all buttons after selection
     const allOptions = document.querySelectorAll('.option');
     allOptions.forEach(btn => btn.disabled = true);
   }
@@ -110,7 +106,7 @@ const quizData = [
   });
   
   function showResult() {
-    questionEl.textContent = `You scored ${score} out of ${quizData.length}!`;
+    questionEl.textContent = ` 📊 You scored ${score} out of ${quizData.length}!`;
     optionsEl.innerHTML = '';
     submitBtn.style.display = 'none';
     feedbackEl.textContent = '';
