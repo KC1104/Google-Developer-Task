@@ -1,29 +1,40 @@
 body {
+
     font-family: Arial, sans-serif;
-    /*background: #f7f7f7;*/
+    /*background: #f7f7f7;
     background: #6d69cc;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;*/
+    background: linear-gradient(-21deg, #667eea, #3d106b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   .center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(135deg, #499ea3, #193f73);
+    height: 90vh;
+    width: 370px;
+    border-radius: 15px;
   }
   h1{
     color: aliceblue;
     font-size: 65px;
     font-family: "Baloo Bhai 2";
     position: relative;
-    top: -10px;
+    top: 10px;
   }
   #disp{
     color: aliceblue;
     position: relative;
-    top: -60px;
+    top: -50px;
     font-size: 20px;
   }
   #info-disp{
@@ -34,10 +45,10 @@ body {
   }
   img{
     position: relative;
-    top: 40px;
+    top: 60px;
   }
   .quiz-container {
-    background: white;
+    background: none;
     padding: 30px;
     border-radius: 10px;
     width: 90%;
@@ -45,7 +56,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
     position: relative;
-    top: -40px;
+    top: -55px;
   }
   .play-button {
     position: relative;
@@ -65,7 +76,10 @@ body {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5);
   }
-  
+  #question{
+    color: #f8f14e;
+    font-size: 18px;
+  }
   #options {
     margin: 20px 0;
   }
@@ -101,5 +115,11 @@ body {
   #feedback {
     margin-top: 15px;
     font-weight: bold;
+    font-size: 17px;
+  }
+  #progress{
+    color: #E0E0E0 ;
+    font-weight: bold;
+    font-size: 17px;
   }
   
